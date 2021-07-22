@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categorias",
+  "info": {
+    "name": "categorias",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_categoria": {
+      "type": "string"
+    },
+    "descripcion_categoria": {
+      "type": "text"
+    },
+    "imagen_categoria": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "metadatos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "componente.metadatos"
+    },
+    "componentes": {
+      "type": "dynamiczone",
+      "components": [
+        "componente.banner",
+        "component.carousel"
+      ]
+    }
+  }
+}

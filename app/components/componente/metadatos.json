@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_componente_metadatos",
+  "info": {
+    "name": "metadatos",
+    "icon": "arrow-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "meta_titulo": {
+      "type": "string"
+    },
+    "meta_descripcion": {
+      "type": "text"
+    },
+    "meta_palabras_clave": {
+      "type": "string"
+    },
+    "imagen_vista_previa": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

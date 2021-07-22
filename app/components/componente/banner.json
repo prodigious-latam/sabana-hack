@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_componente_banners",
+  "info": {
+    "name": "banner",
+    "icon": "bolt"
+  },
+  "options": {},
+  "attributes": {
+    "imagen_fondo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "texto_banner": {
+      "type": "string"
+    }
+  }
+}

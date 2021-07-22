@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pagina-principal",
+      "handler": "pagina-principal.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pagina-principal",
+      "handler": "pagina-principal.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pagina-principal",
+      "handler": "pagina-principal.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

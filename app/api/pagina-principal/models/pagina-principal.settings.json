@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "pagina_principals",
+  "info": {
+    "name": "pagina_principal",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre_sitio": {
+      "type": "string"
+    },
+    "metadatos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "componente.metadatos"
+    }
+  }
+}
